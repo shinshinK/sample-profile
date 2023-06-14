@@ -1,0 +1,17 @@
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #279484;
+    color: #fff;
+    height: 90px;
+}
+
+.title_name{
+    font-size: 35;
+    font-family: 'Train One', cursive;
+    float:left;
+    padding: 20px,40px;
+}
