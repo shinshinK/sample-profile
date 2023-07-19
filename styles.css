@@ -4,29 +4,58 @@ html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div, footer {
 }
 
 /*---header---*/
+
 header{
-    background-color: rgb(234, 52, 36);
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    background-image: url(images/002_cut.PNG);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size:cover;
+    /*---background-color: rgb(234, 52, 36);---*/
     color: #fff;
-    height: 90px;
 }
+
 
 .header_name{
     float:left;
     font-size: 40px;
-    padding: 16px 40px;
+    padding: 0px 40px;
     font-family: 'Train One', cursive;
 }
 .header_list li{
     float: left;
     color: #fff;
     font-size: 20px;
-    padding: 36px 10px;
+    padding: 0px 10px;
     list-style: none;
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-.header_list a{
-    color: #fff;
+.header_list a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header_list a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    content: "";
+}
+.header_list a:hover:after {
+    transform: translate(0, 0);
 }
 
 
@@ -45,6 +74,12 @@ main li{
     text-align: left;
     list-style:inside;
 }
+.first_content{
+    margin-top: 150px;
+}
+.main_text{
+    margin: 0px 30px;
+}
 
 
 .profile, .skill, .portfolio{
@@ -53,7 +88,6 @@ main li{
 }
 
 .profile img{
-    margin: 20px;
     width: 250px;
     height: 250px;
     object-fit: cover;
